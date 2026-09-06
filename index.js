@@ -4,7 +4,8 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let passwordField1 = document.querySelector("#password-field1");
 let passwordField2 = document.querySelector("#password-field2");
-
+let copiedMessage1 = document.querySelector("#copied1");
+let copiedMessage2 = document.querySelector("#copied2");
 
 function generatePassword() {
   let password = "";
@@ -18,4 +19,18 @@ function generatePassword() {
 function generatePasswords() {
   passwordField1.textContent = generatePassword();
   passwordField2.textContent = generatePassword();
+}
+
+function copyPasswords1() {
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(passwordField1.textContent);
+        copiedMessage1.textContent = "Copied!";
+    }
+}
+
+function copyPasswords2() {
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(passwordField2.textContent);
+        copiedMessage2.textContent = "Copied!";
+    }
 }

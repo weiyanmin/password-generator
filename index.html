@@ -18,8 +18,10 @@
       <div class="divider" aria-hidden="true"></div>
 
       <section class="passwords" aria-label="Generated passwords">
-        <output class="password-field" id ="password-field1" aria-label="First generated password"></output>
-        <output class="password-field" id ="password-field2" aria-label="Second generated password"></output>
+        <output class="password-field" id ="password-field1" aria-label="First generated password" onclick="copyPasswords1()"></output>
+        <output class="password-field" id ="password-field2" aria-label="Second generated password" onclick="copyPasswords2()"></output>
+        <div id="copied1" class="copied-message" aria-live="polite"></div>
+        <div id="copied2" class="copied-message" aria-live="polite"></div>
       </section>
     </main>
     <script src="index.js"></script>
