@@ -60,6 +60,7 @@ h1 span {
   gap: 12px;
   margin-top: 50px;
   background: #10B981;
+  border: none;
 
 }
 
@@ -86,6 +87,11 @@ h1 span {
   min-height: 60px;
   border-radius: 12px;
   background: #27364d;
+  color: #55F991;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 640px) {

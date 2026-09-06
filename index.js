@@ -2,5 +2,20 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 
 
+let passwordField1 = document.querySelector("#password-field1");
+let passwordField2 = document.querySelector("#password-field2");
 
 
+function generatePassword() {
+  let password = "";
+  for (let i = 0; i < 15; i++) {
+    password += characters[Math.floor(Math.random() * characters.length)];
+  }
+  return password;
+}
+
+
+function generatePasswords() {
+  passwordField1.textContent = generatePassword();
+  passwordField2.textContent = generatePassword();
+}

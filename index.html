@@ -14,14 +14,14 @@
       </h1>
       <p class="tagline">Never use an insecure password again.</p>
 
-      <button class="generate-button" type="button">Generate passwords</button>
-
+      <button class="generate-button" type="button" onclick="generatePasswords()">Generate passwords</button>
       <div class="divider" aria-hidden="true"></div>
 
       <section class="passwords" aria-label="Generated passwords">
-        <output class="password-field" aria-label="First generated password"></output>
-        <output class="password-field" aria-label="Second generated password"></output>
+        <output class="password-field" id ="password-field1" aria-label="First generated password"></output>
+        <output class="password-field" id ="password-field2" aria-label="Second generated password"></output>
       </section>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
