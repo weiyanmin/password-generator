@@ -19,17 +19,19 @@ function generatePassword() {
 function generatePasswords() {
   passwordField1.textContent = generatePassword();
   passwordField2.textContent = generatePassword();
+  copiedMessage1.textContent = " ";
+  copiedMessage2.textContent = " ";
 }
 
 function copyPasswords1() {
-    if (navigator.clipboard) {
+    if (navigator.clipboard && passwordField1.textContent) {
         navigator.clipboard.writeText(passwordField1.textContent);
         copiedMessage1.textContent = "Copied!";
     }
 }
 
 function copyPasswords2() {
-    if (navigator.clipboard) {
+    if (navigator.clipboard && passwordField2.textContent) {
         navigator.clipboard.writeText(passwordField2.textContent);
         copiedMessage2.textContent = "Copied!";
     }
