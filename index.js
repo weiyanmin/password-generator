@@ -26,13 +26,16 @@ function generatePasswords() {
 function copyPasswords1() {
     if (navigator.clipboard && passwordField1.textContent) {
         navigator.clipboard.writeText(passwordField1.textContent);
+        copiedMessage2.textContent = "";
         copiedMessage1.textContent = "Copied!";
+        
     }
 }
 
 function copyPasswords2() {
     if (navigator.clipboard && passwordField2.textContent) {
         navigator.clipboard.writeText(passwordField2.textContent);
+        copiedMessage1.textContent = "";
         copiedMessage2.textContent = "Copied!";
     }
 }
